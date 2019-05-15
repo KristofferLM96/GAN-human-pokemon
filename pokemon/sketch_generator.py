@@ -2,9 +2,9 @@ import cv2
 import glob
 import os
 
-images = [cv2.imread(file) for file in glob.glob("dataset/human/original/*.jpg")]
+images = [cv2.imread(file) for file in glob.glob("data/pokemon/sketch/temp/*.jpg")]
 filenames = []
-for root, dirs, files in os.walk("dataset/human/original/"):
+for root, dirs, files in os.walk("data/pokemon/sketch/temp/"):
     for filename in files:
         filenames.append(filename)
 index = 0
@@ -31,6 +31,6 @@ for img in images:
 
     # displaying the sketch image
     # cv2.imshow('24729177_1.jpg', final_img)
-    cv2.imwrite('dataset/human/sketch/'+filenames[index], final_img)
+    cv2.imwrite('data/pokemon/sketch/'+filenames[index], final_img)
     index += 1
     cv2.destroyAllWindows()
