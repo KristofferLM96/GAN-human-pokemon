@@ -79,8 +79,8 @@ if __name__ == '__main__':  # we show an example usage here.
 
     ims, txts, links = [], [], []
     for n in range(4):
-        ims.append('image_%d.png' % n)
+        ims.append('image_%d.jpg' % n)
         txts.append('text_%d' % n)
-        links.append('image_%d.png' % n)
+        links.append('image_%d.jpg' % n)
     html.add_images(ims, txts, links)
     html.save()
