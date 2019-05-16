@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-path_resize = "data/pokemon/sketch/temp/"
+path_resize = "data/pokemon/sketch/temp"
 dirs_resize = os.listdir(path_resize)
 resizefolder = path_resize + "/resized"
 
