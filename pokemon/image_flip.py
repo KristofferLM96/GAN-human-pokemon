@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-path_flip = "data/pokemon/sketch/temp/"
+path_flip = "data/pokemon/sketch/temp"
 dirs_flip = os.listdir(path_flip)
 flipfolder = path_flip + "/flipped"
 
